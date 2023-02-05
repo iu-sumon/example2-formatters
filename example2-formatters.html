@@ -33,7 +33,7 @@
         <td valign="top" width="50%">
           <div id="myGrid" style="width: 700px; height: 500px"></div>
         </td>
-        <td valign="top">
+        <!-- <td valign="top">
           <h2>Demonstrates:</h2>
           <ul>
             <li>
@@ -58,7 +58,7 @@
               >
             </li>
           </ul>
-        </td>
+        </td> -->
       </tr>
     </table>
 
@@ -104,7 +104,7 @@
          {id: "title", name: "Title", field: "title", width: 120, cssClass: "cell-title", formatter: formatter},
          {id: "duration", name: "Duration", field: "duration"},
          {id: "%", name: "% Complete", field: "percentComplete", width: 80, resizable: false, formatter: Slick.Formatters.PercentCompleteBar},
-         {id: "status", name: "Status", field: "percentComplete", width: 50, resizable: false, formatter: statusFormatter, editor: Slick.Editors.Text },
+         {id: "status", name: "Status", sortable: true, field: "percentComplete", width: 50, resizable: false, formatter: statusFormatter, editor: Slick.Editors.Text },
          {id: "start", name: "Start", field: "start", minWidth: 60},
          {id: "finish", name: "Finish", field: "finish", minWidth: 60},
          {id: "effort-driven", name: "Effort Driven", sortable: false, width: 80, minWidth: 20, maxWidth: 80, cssClass: "cell-effort-driven", field: "effortDriven", formatter: Slick.Formatters.Checkmark}
@@ -118,7 +118,7 @@
        };
      
        $(function () {
-         for (var i = 0; i < 5; i++) {
+         for (var i = 0; i < 20; i++) {
            var d = (data[i] = {});
      
            d["title"] = "<a href='#' tabindex='0'>Task</a> " + i;
