@@ -1,0 +1,172 @@
+:root {
+  --body-bg: #f3f3f3;
+  --body-color: #000;
+
+  --footer-bg: #f5f5f5;
+  --footer-box-shadow: rgba(0, 0, 0, 0.2);
+  --selectors-button-bg: #f8f9fa;
+  --button-active-color: #0caf82;
+  --button-inactive-color: #808080;
+  --side-drawer-void-bg: rgba(0, 0, 0, 0.6);
+  --side-drawer-body-bg: #fff;
+  --trade-icons-color: #fff;
+  --mt-card-bg: #fff;
+  --mt-card-box-shadow1: rgba(0, 0, 0, 0.19);
+  --mt-card-box-shadow2: rgba(0, 0, 0, 0.23);
+  --ribbon-red-text-shadow: rgba(255, 255, 255, 0.5);
+  --ribbon-red-bg: #4dc911;
+  --ribbon-red-box-shadow: rgba(0, 0, 0, 0.3);
+  --slider-bg: #ccc;
+  --slider-before-bg: #fff;
+  --input-checked-slider-bg: #66bb6a;
+  --watchlist-item-color: #000;
+  --watchlist-sell-price-container: #fe3957;
+  --watchlist-spread-container: #cdcacd;
+  --watchlist-row-border: #cdcacd;
+  --trade-dots-color: rgb(193 189 189);
+  --trade-row-position-bg: #e7e7e77e;
+  --trade-accordion-boder: #e9ecef;
+  --trade-accordion-sub-titles-color: #717172;
+  --history-positions-accordion-balance-text: #000;
+  --history-balance-row-sub-titles-color: #717172;
+  --nav-link-color: #fff;
+  --mt-card-bg: #fff;
+  --trade-accordion-row-sub-titles: #717172;
+  --watchlist-container-bg: #fff;
+  --page-color: #f9f9f9;
+  --font-color: #424242;
+  --select-bg: rgb(255, 255, 255);
+}
+
+[data-theme="dark"] {
+  --body-bg: #3a3a3a;
+  --body-color: #fff;
+
+  --footer-bg: #000;
+  --footer-box-shadow: rgba(0, 0, 0, 0.2);
+  --selectors-button-bg: #160e0e;
+  --button-active-color: #0caf82;
+  --button-inactive-color: #808080;
+  --mt-card-bg: #000;
+
+  --side-drawer-void-bg: rgba(0, 0, 0, 0.6);
+  --side-drawer-body-bg: #fff;
+  --trade-icons-color: #fff;
+  --mt-card-bg: #262525;
+  --mt-card-box-shadow1: rgba(0, 0, 0, 0.19);
+  --mt-card-box-shadow2: rgba(0, 0, 0, 0.23);
+  --ribbon-red-text-shadow: rgba(255, 255, 255, 0.5);
+  --ribbon-red-bg: #4dc911;
+  --ribbon-red-box-shadow: rgba(0, 0, 0, 0.3);
+  --slider-bg: #ccc;
+  --slider-before-bg: #fff;
+  --input-checked-slider-bg: #66bb6a;
+
+  --watchlist-item-color: white;
+  --watchlist-sell-price-container: #fe3957;
+  --watchlist-spread-container: #cdcacd;
+  --watchlist-row-border: #3b3e40;
+  --trade-dots-color: #3b3e40;
+  --trade-row-position-bg: #605a5a7e;
+  --trade-accordion-boder: #3b3e40;
+  --trade-accordion-sub-titles-color: #717172;
+  --history-positions-accordion-balance-text: #fff;
+  --history-balance-row-sub-titles-color: #717172;
+  --nav-link-color: #fff;
+  --trade-accordion-row-sub-titles: rgba(255, 255, 255, 0.7);
+  --watchlist-container-bg: #3e444a;
+  --page-color: #111113;
+  --font-color: #f3f7ff;
+  --select-bg: #191b20;
+}
+
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: var(--body-bg);
+  color: var(--body-color);
+  line-height: 26px;
+}
+
+.page-header {
+  height: 26px;
+  padding: 5px 5px 0;
+}
+
+.menu {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  font-size: 13px;
+  flex-direction: row;
+  padding: 0 15px;
+  border-radius: 3px 3px 0 0;
+}
+
+.menu-item {
+  position: relative;
+  padding: 0 15px;
+  white-space: nowrap;
+  text-decoration: none;
+  cursor: default;
+}
+
+.menu-item .menu-item {
+  display: block;
+  border-radius: 3px 3px 3px 3px;
+}
+
+.menu-children {
+  display: none;
+  left: 0;
+  top: auto;
+  min-width: calc(100% + 10px);
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  z-index: 3;
+  border-radius: 0 3px 3px 3px;
+  color: #333;
+  background: #fff;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.menu-children .menu-item:hover {
+  background: #333;
+  background: #a1a1a1;
+}
+
+.menu-item:hover {
+  background-color: white;
+}
+
+.page-center {
+  height: calc(100vh - 62px);
+  padding: 0 5px;
+}
+.col-pad-symbol {
+  padding-right: 9px;
+  padding-left: 16px;
+}
+
+.symbol-table-parent {
+  height: 356px;
+  overflow-y: scroll;
+}
+
+.symbol-data-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  font-size: 11px;
+}
+
+.nav-link {
+  padding: 0 1rem;
+}
